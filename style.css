@@ -1,0 +1,145 @@
+/* general */
+
+:root {
+  --light-grey: hsl(0, 0%, 98%);
+  --mid-grey: hsl(229, 6%, 66%);
+  --dark-grey: hsl(234, 12%, 34%);
+}
+
+html {
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-grey);
+  color: var(--mid-grey);
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  background-color: white;
+}
+
+.header {
+  text-align: center;
+}
+
+/* typography */
+
+h1,
+h2 {
+  color: var(--dark-grey);
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+.header h1:first-child {
+  font-weight: 200;
+}
+
+.card p {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+/* margin and padding */
+
+body {
+  padding: 5rem 0;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 5rem;
+}
+
+.card {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card img {
+  align-self: flex-end;
+}
+
+.header p {
+  margin-top: 1rem;
+}
+
+.card p {
+  margin-bottom: 1rem;
+}
+
+/* card board */
+
+.card {
+  border-radius: 1.5%;
+}
+
+#supervisor {
+  box-shadow: 0 -4px hsl(180, 62%, 55%), /* top border */ 0 1rem 2rem; /* bottom border */
+}
+
+#team-builder {
+  box-shadow: 0 -4px hsl(0, 78%, 62%), /* top border */ 0 1rem 2rem; /* bottom border */
+}
+
+#karma {
+  box-shadow: 0 -4px hsl(34, 97%, 64%), /* top border */ 0 1rem 2rem; /* bottom border */
+}
+
+#calculator {
+  box-shadow: 0 -4px hsl(212, 86%, 64%), /* top border */ 0 1rem 2rem; /* bottom border */
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .header {
+    max-width: 50%;
+    margin: 0 auto 5rem auto;
+  }
+
+  .card-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .card p {
+    font-weight: 400;
+    margin-bottom: 2rem;
+    max-width: 85%;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+}
